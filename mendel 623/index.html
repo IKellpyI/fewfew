@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mendel │ 623</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="MENDEL with bg.jpg" type="image">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Mendel│623</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Money</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <div class="M">
+            <img src="MENDEL.png" id="Main">
+            </div>
+            <img src="Scene L.png" id="Left">
+            <img src="Scene R.png" id="Right">
+        </section>
+        <!--SEC----------------------------------------------->
+        <div class="sec">
+            <h2> About Us </h2>
+            <p>กู Push นะ 2345ty LOLLOLOLOL
+                กู Push ได้แล้วโว้ย
+                ไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไไ
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+             
+        </div>
+        <!--END SEC----------------------------------------------->
+        <script>
+            let Left = document.getElementById('Left');
+            let Right = document.getElementById('Right');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                Right.style.left = value*5 + 'px';
+                Left.style.left =  value*-5  + 'px';
+            })
+        </script>
+    </body>
+</html>
