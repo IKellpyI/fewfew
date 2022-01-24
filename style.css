@@ -1,0 +1,293 @@
+@font-face 
+{
+  font-family: 'SOV_Nophamas';
+  src: url('fonts/SOV_Nophamas.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: 'Asangha-Thin';
+  src: url('fonts/Asangha-Thin.otf') format('opentype');
+}
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+  background: rgb(15, 15, 15);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+.head
+{
+  background-image: url('pictures/wow.png');
+  width: 110%;
+  height: 760px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: none;
+}
+
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    cursor: none;
+}
+
+.scrolling-active
+{
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+header .logo
+{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: none;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+    cursor: none;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: none;
+}
+header ul li a:hover, 
+header ul li a.active
+{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    cursor: none;
+}
+
+.sex
+{
+  font-size: 20rem;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  cursor: none;
+}
+
+.ptxt
+{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: rgb(214, 190, 84);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-size: 8rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-family:SOV_Nophamas;
+  cursor: none;
+}
+
+.tong img
+{
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  top: 25%;
+  left: 40%;
+  transform: rotate(15deg)
+}
+
+.tong1 img
+{
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  top: 26%;
+  left: 20%;
+  transform: rotate(190deg)
+}
+
+.nom img
+{
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  top: 5%;
+  left: 35%;
+}
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    height: 900px;
+    cursor: none;
+
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.sec p
+{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    width: 60%;
+}
+
+.sec img
+{
+  position: absolute;  
+  width: 30%;
+  left: 70%;
+  top: 20%;
+  border-radius: 20px;
+}
+
+
+.smt
+{
+  position: relative;
+  padding: 100px;
+
+}
+.smt h3
+{
+  top: 30%;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+.smt p
+{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    width: 60%;
+}
+
+::-webkit-scrollbar {
+      width: 15px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgb(19, 19, 19);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #ffffff;
+      border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #c2c2c2;
+    }
+
+.cursor {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate( -50%, -50% );
+    transition-duration: 0ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.cursor::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    transform: translate( -50%, -50% );
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+    z-index: 5;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid greenyellow;
+}
+
+p {
+  color: white;
+  font-family: 'arial';
+  text-align: center;
+  margin-top: 35px;
+  font-size: 1.4em;
+  
+  a {
+    color: teal;
+  }
+}
